@@ -234,20 +234,34 @@ html {
     z-index: 1000;
 }
 
-/* Styling for the sidebar */
+/* Sidebar Styling */
 #sidebar {
-    display: none; /* Sidebar is hidden by default */
-    position: fixed;
+    position: fixed;  /* Keep sidebar fixed on the left */
     top: 0;
     left: 0;
     width: 250px;
-    height: 100%;
+    height: 100vh; /* Full height of the viewport */
     background-color: #333;
     color: white;
     padding: 15px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000; /* Ensure sidebar is on top */
-    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar h3 {
+    margin-top: 0;
+}
+
+#sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
 }
 
 /* Styling for the button */
@@ -267,18 +281,6 @@ html {
     background-color: #555;
 }
 
-/* Sidebar links */
-.sidebar a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    background: #e9ecef;
-    margin: 5px 0;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-}
 
 /* Info Boxes */
 .features {
