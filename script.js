@@ -2,10 +2,10 @@ function toggleSidebar() {
     // Get the sidebar element
     let sidebar = document.getElementById("sidebar");
 
-    // Check the current display status and toggle
-    if (sidebar.style.display === "none" || sidebar.style.display === "") {
-        sidebar.style.display = "block";  // Show sidebar
+    // Check if the sidebar is off-screen (left: -250px)
+    if (sidebar.style.left === "-250px" || sidebar.style.left === "") {
+        sidebar.style.left = "0";  // Show sidebar by setting left to 0
     } else {
-        sidebar.style.display = "none";  // Hide sidebar
+        sidebar.style.left = "-250px";  // Hide sidebar off-screen
     }
 }

@@ -112,6 +112,7 @@ p {
     margin: 0 auto;
 }
 
+
 .features{
     display: flex; 
     justify-content: space-around; 
@@ -241,10 +242,10 @@ html {
     left: 0;
     width: 250px;
     height: 100vh; /* Full height of the viewport */
-    background-color: #333;
+    background-color: #F6B0BB;
     color: white;
     padding: 15px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0 5px #9CAD8C;
     z-index: 1000; /* Ensure sidebar is on top */
     display: flex;
     flex-direction: column;
@@ -269,7 +270,7 @@ html {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #333;
+    background-color: #F6B0BB;
     color: white;
     border: none;
     border-radius: 5px;
@@ -278,7 +279,7 @@ html {
 
 /* Button hover effect */
 .sidebar-btn:hover {
-    background-color: #555;
+    background-color: #9CAD8C;
 }
 
 
