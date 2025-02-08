@@ -4,7 +4,7 @@
     align-items: center;
     background-color: #F1C8CB; 
     padding: 15px 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     color: white;
@@ -22,6 +22,14 @@ h1{
     width: 100%; 
     align-items: left; 
 }
+h2{
+    color: rgb(88, 2, 2);
+    font-size: 70x;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%; 
+    align-items: left; 
+}
+
 
 p{
     color:rgb(0, 0, 0);
@@ -43,7 +51,9 @@ p{
 } */
 
 .nav-bar{
-    display: flex; 
+    display: flex;
+    text-align: center; /* Centers the navigation */
+    margin-top: 20px; /* Adds space between images and nav */
 }
 
 .nav-list{
@@ -143,31 +153,35 @@ footer {
 
 .card-container {
     display: flex;
-    justify-content: space-between;  
-    flex-wrap: wrap;  
-    gap: 20px;       
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: space-around; /* Distributes cards evenly */
+    flex-wrap: wrap; /* Allows cards to wrap if the screen is too small */
+    gap: 20px; /* Adds space between cards */
+    padding: 20px;
 }
+
+
 .card {
     background: rgb(255, 200, 200);
-    color: rgb(0, 0, 0);
-    width: 20%;  
-    min-width: 250px;  
-    height: 350px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* text-align: center; */
-    padding: 20px;
-    transition: transform 0.3s ease;
+        color: rgb(0, 0, 0);
+        flex: 1 1 300px; /* Adjusts size dynamically */
+        max-width: 300px; /* Prevents it from getting too large */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease;
 }
+    
 
 .card:hover {
     transform: translateY(-10px);  
 }
 
 .card h3 {
-    color: #297a2d;
+    color: #000000;
+    font-size: 40px;
+    align-items: left;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .card p {
