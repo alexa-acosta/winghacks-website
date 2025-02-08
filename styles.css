@@ -292,7 +292,7 @@ html {
 }
 
 #fitness, #nutrition, #mental-health, #work-life, #routine {
-    scroll-margin-top: 250px; /* Adjust based on the height of your fixed sidebar */
+    scroll-margin-top: 210px; /* Adjust based on the height of your fixed sidebar */
 }
 
 /* Info Boxes */
