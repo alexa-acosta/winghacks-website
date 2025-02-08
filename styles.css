@@ -386,8 +386,8 @@ html {
 
 
 .card2 {
-    background: rgb(94, 43, 43);
-    color: black;
+    background: rgb(72, 27, 27);
+    color: rgb(255, 255, 255);
     flex: 1 1 300px; /* Flexible size */
     max-width: 800px;
     padding: 20px;
