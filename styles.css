@@ -286,9 +286,13 @@ html {
 
 /* Main Content Styling */
 .main-content {
-    margin-left: 20px;  /* Add left margin to make space for the fixed button */
-    padding-left: 270px; /* Ensure content doesn't get covered by the sidebar */
-    margin-top: 60px; /* Shift the entire content down to avoid being covered by the button */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the content horizontally */
+    justify-content: flex-start;  /* Align items to the top */
+    padding: 20px;
+    margin-top: 60px; /* Adjust based on where you want the content to start */
+    width: 100%;  /* Shift the entire content down to avoid being covered by the button */
 }
 
 #fitness, #nutrition, #mental-health, #work-life, #routine {
