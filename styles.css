@@ -18,6 +18,7 @@
     align-items: center;  /* Aligns them vertically */
     gap: 20px;  /* Adds space between images */
     margin-bottom: 20px;  /* Adds space before the navbar */
+    margin-left: 20 px;
 }
 
 body{ 
@@ -44,7 +45,7 @@ p{
     color:rgb(0, 0, 0);
     font-size: 60;
     font-weight: 100;
-    font-style: oblique;
+    /* font-style: oblique; */
     align-items: left;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -61,9 +62,15 @@ p{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 } */
 
+.nav-container{
+    width: 100%; 
+    text-align: center; 
+}
 .nav-bar{
     display: flex;
-    text-align: center; /* Centers the navigation */
+    text-align: center;
+    padding: 10px;
+    width: 100%;  /* Centers the navigation */
     margin-top: 20px; /* Adds space between images and nav */
 }
 
