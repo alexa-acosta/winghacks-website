@@ -375,3 +375,40 @@ html {
 }
 
 
+
+.card2-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+
+.card2 {
+    background: rgb(94, 43, 43);
+    color: black;
+    flex: 1 1 300px; /* Flexible size */
+    max-width: 800px;
+    padding: 20px;
+    border: 5px solid black; /* Thick border */
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(208, 45, 165, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+    
+
+.card2:hover {
+    transform: translateY(-5px);  
+}
+
+.card2 h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #AD1457;
+}
+
+.card2 p {
+    font-size: 18px;
+    margin: 20px 0;
+}
