@@ -1,19 +1,9 @@
-<!DOCTYPE html> 
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women's Health Blog</title>
-    <nav class="nav-bar">
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href='index.html'>Home</a></li>
-            <li class="nav-item"><a class="nav-link" href='aitool.html'>Q&A</a></li>
-            <li class="nav-item"><a class="nav-link" href='gethelp.html'>Get Help</a></li>
-            <li class="nav-item"><a class="nav-link" href='womensnews.html'>News</a></li>
-            <li class="nav-item"><a class="nav-link" href='lifestyle.html'>Lifestyle</a></li>
-            <li class="nav-item"><a class="nav-link" href='sexualhealth.html'>Lets talk girlhood! </a></li>
-        </ul>
-    </nav>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
@@ -21,164 +11,115 @@
 
     <header>
         <div class="logo-container" style="justify-content: flex-start; margin-left: 0;">
-            <img src="assests/logo.png" alt="Logo" width="100">
+            <img src="assets/logo.png" alt="Logo" width="100">
         </div>
         <h1>Women's Health Blog</h1>
     </header>
 
-   
-    
-    </body>
-    body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href='index.html'>Home</a></li>
+            <li class="nav-item"><a class="nav-link" href='aitool.html'>Q&A</a></li>
+            <li class="nav-item"><a class="nav-link" href='gethelp.html'>Get Help</a></li>
+            <li class="nav-item"><a class="nav-link" href='womensnews.html'>News</a></li>
+            <li class="nav-item"><a class="nav-link" href='lifestyle.html'>Lifestyle</a></li>
+            <li class="nav-item"><a class="nav-link" href='sexualhealth.html'>Let's Talk Girlhood!</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sidebar Toggle Button -->
     <button class="sidebar-btn" onclick="toggleSidebar()">Menu</button>
 
     <div id="sidebar">
-        <h3></h3>
-        <h3></h3>
         <h3>Categories</h3>
         <a href="#sex">Sex Education</a>
         <a href="#period">Your Cycle</a>
-        <a href="#Hormones">Your Hormones</a>
-        <a href="#BirthControl">Birth Control</a>
+        <a href="#hormones">Your Hormones</a>
+        <a href="#birthControl">Birth Control</a>
     </div>
->
 
-    <h3>Staying in the dark about sex educaion is never okay. Our goal is to destigmatize the subject, and make you feel comfortable asking questions and searching for answers.</h3>
-    
-
+    <!-- Main Content -->
     <div class="main-content">
         <section id="sex">
             <header>Sex Education</header>
             <div class="card-container">
                 <div class="card">
                     <h3>Safe Sex</h3>
-                    <input type="checkbox" id="sexEdToggle">
-                    <label class="btn" for="sexEdToggle">Learn More</label>
+                    <input type="checkbox" id="safeSexToggle">
+                    <label class="btn" for="safeSexToggle">Learn More</label>
                     <div class="hidden-content">
-                        <p>Safe Sex is Important... Heres why:</p>
-                        <p>lalalalalalalalalalaalalalalala</p>
+                        <p>Safe sex is important to prevent STIs and unintended pregnancies. Always use protection!</p>
                     </div>
+
                     <h3>Consent</h3>
-                    <input type="checkbox" id="sexEdToggle">
-                    <label class="btn" for="sexEdToggle">Learn More</label>
+                    <input type="checkbox" id="consentToggle">
+                    <label class="btn" for="consentToggle">Learn More</label>
                     <div class="hidden-content">
-                        <p>Consent is Important... Heres why:</p>
-                        <p>lalalalalalalalalalaalalalalala</p>
+                        <p>Consent is crucial. It means that everyone involved is willingly participating and agreeing to the activity.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section id="period">
             <h2>Your Cycle</h2>
             <div class="card-container">
                 <div class="card">
                     <h3>Your Cycle Explained</h3>
-                    <input type="checkbox" id="mentalHealthToggle">
-                    <label class="btn" for="mentalHealthToggle">Learn More</label>
+                    <input type="checkbox" id="cycleToggle">
+                    <label class="btn" for="cycleToggle">Learn More</label>
                     <div class="hidden-content">
-                        <p>Your cycle... lalalala</p>
-                        <p>Your cycle... lalalala</p>
-                    <h3>Your Cycle Again explained</h3>
-                     <input type="checkbox" id="mentalHealthToggle">
-                    <label class="btn" for="mentalHealthToggle">Learn More</label>
-                    <div class="hidden-content">
-                        <p>Your cycle... lalalala</p>
-                        <p>Your cycle... lalalala</p>
+                        <p>The menstrual cycle involves several phases that affect mood, energy, and overall health.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="Hormones">
-            <h2>Hormones</h2>
+
+        <section id="hormones">
+            <h2>Your Hormones</h2>
             <div class="card-container">
                 <div class="card">
-                    <h3>Medical Care</h3>
-                    <p>How to get access to doctors.</p>
-                    <input type="checkbox" id="educationalToggle">
-                    <label class="btn" for="educationalToggle">Learn More</label>
+                    <h3>Hormonal Health</h3>
+                    <input type="checkbox" id="hormonalToggle">
+                    <label class="btn" for="hormonalToggle">Learn More</label>
                     <div class="hidden-content">
-                        <p>UF Student Health Care Center: (352) 392-1161</p>
+                        <p>Hormones play a major role in regulating mood, metabolism, and reproductive health. Understanding your hormonal fluctuations can help you maintain balance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="birthControl">
+            <h2>Birth Control Options</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Available Methods</h3>
+                    <input type="checkbox" id="birthControlToggle">
+                    <label class="btn" for="birthControlToggle">Learn More</label>
+                    <div class="hidden-content">
+                        <p>There are many birth control options, including pills, IUDs, implants, and condoms. It's important to consult with a healthcare provider to find the best option for you.</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <script>
+        // Function to toggle sidebar visibility
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+        
+        // Script to handle the showing/hiding of hidden content
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const content = this.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
 </body>
 </html>
-
-    <!-- </html>
-    <h2>The Place to Go When You Have Questions!</h2>
-
-    <section class="accordion-container">
-        <div class="accordion">
-            <a href="#sex-info" class="btn">Everything to Know About Sex</a>
-        </div>
-        <div class="accordion">
-            <a href="#cycle-info" class="btn">Understanding the Menstrual Cycle</a>
-        </div>
-        <div class="accordion">
-            <a href="#birth-control-info" class="btn">Birth Control Options</a>
-        </div>
-        <div class="accordion">
-            <a href="#hormonal-health-info" class="btn">Hormonal Health</a>
-        </div>
-    </section>
-
-    
-    <section class="horiz-features">
-        <div class="horiz-box" id="sex-info">
-            <h1>Everything to Know About Sex</h1>
-            <p>Learn about consent, safe sex practices, and reproductive health. Understanding your body and rights is essential for a healthy sexual life.</p>
-            <div class="horiz-box-content">
-                <h2>Consent:</h2>
-                <p>Consent is crucial in all sexual activities. It is the mutual agreement of all parties involved.</p>
-                <h2>Safe Sex:</h2>
-                <p>Practicing safe sex includes using protection and being aware of sexual health risks.</p>
-                <h2>Reproductive Health:</h2>
-                <p>Understanding reproductive health allows you to make informed decisions about your body.</p>
-            </div>
-        </div>
-    
-        <div class="horiz-box" id="cycle-info">
-            <h1>Understanding the Menstrual Cycle</h1>
-            <p>From period symptoms to hormonal changes, get insights on how the menstrual cycle affects the body and mind.</p>
-            <div class="horiz-box-content">
-                <h2>Period Symptoms:</h2>
-                <p>Periods can cause discomfort, ranging from cramps to mood changes.</p>
-                <h2>Hormonal Changes:</h2>
-                <p>Hormones fluctuate throughout the cycle, impacting mood, energy, and other factors.</p>
-                <h2>The Cycle:</h2>
-                <p>Understanding the four phases of your cycle can help you track your health and well-being.</p>
-            </div>
-        </div>
-    
-        <div class="horiz-box" id="birth-control-info">
-            <h1>Birth Control Options</h1>
-            <p>Explore different birth control methods, their effectiveness, and potential side effects.</p>
-            <div class="horiz-box-content">
-                <h2>Methods:</h2>
-                <p>There are various methods, including pills, IUDs, and condoms.</p>
-                <h2>Side Effects:</h2>
-                <p>Each method has potential side effects, from weight changes to mood swings.</p>
-                <h2>Effectiveness:</h2>
-                <p>Different methods have different effectiveness rates, with some being more reliable than others.</p>
-            </div>
-        </div>
-    
-        <div class="horiz-box" id="hormonal-health-info">
-            <h1>Hormonal Health</h1>
-            <p>Understand how hormones impact mood, energy levels, and overall well-being.</p>
-            <div class="horiz-box-content">
-                <h2>Mood:</h2>
-                <p>Hormonal fluctuations can cause changes in mood, including irritability and depression.</p>
-                <h2>Energy:</h2>
-                <p>Hormones can impact your energy levels, affecting both physical and mental performance.</p>
-                <h2>Well-being:</h2>
-                <p>A balanced hormonal system is key to maintaining overall health and well-being.</p>
-            </div>
-        </div>
-    </section>
-</body>
-</html> -->
