@@ -1,6 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     background-color: #F1C8CB; 
     padding: 15px 20px;
@@ -18,7 +19,6 @@
     align-items: center;  /* Aligns them vertically */
     gap: 20px;  /* Adds space between images */
     margin-bottom: 20px;  /* Adds space before the navbar */
-    margin-left: 20 px;
 }
 
 body{ 
@@ -161,13 +161,11 @@ input[type="checkbox"]:checked + label + .hidden-content {
 }
 
 footer {
-    background-color: #ff9ec5;
-    color: rgb(0, 0, 0);
+    background-color: #AD1457;
+    color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 15px;
+    margin-top: 40px;
 }
 
 .card-container {
