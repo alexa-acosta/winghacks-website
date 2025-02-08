@@ -293,15 +293,38 @@ html {
 }
 
 .info-box {
-    padding: 20px;
+    flex: 1 1 30%;  /* Each box takes 30% width */
+    background-color: white;
     border: 2px solid #4CAF50;
-    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 .info-box h1 {
     color: #4CAF50;
+    font-size: 1.5rem;
 }
+
+.info-box-content h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.info-box-content p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Stack the info boxes vertically on smaller screens */
+    }
+}
+
 
 .info-box-content {
     margin-top: 10px;
