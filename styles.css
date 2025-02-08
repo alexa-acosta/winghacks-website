@@ -238,9 +238,9 @@ html {
     position: fixed;  /* Keep sidebar fixed on the left */
     top: 0;
     left: -250px; /* Initially off-screen */
-    width: 250px;
+    width: 200px;
     height: 100vh; /* Full height of the viewport */
-    background-color: #333;
+    background-color: #F1C8CB;
     color: white;
     padding: 15px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
@@ -264,12 +264,17 @@ html {
     text-decoration: underline;
 }
 
+.sidebar-btn:hover {
+    background-color: #9CAD8C; /* Darker shade for the hover effect */
+    transform: scale(1.1); /* Slightly increase the size of the button */
+}
+
 /* Button Styling */
 .sidebar-btn {
     padding: 8px 16px;
     font-size: 14px;
     cursor: pointer;
-    background-color: #333;
+    background-color: #F6B0BB;
     color: white;
     border: none;
     border-radius: 5px;
@@ -334,17 +339,5 @@ html {
     font-family: Arial, sans-serif;
 }
 
-.white-box {
-    width: 100%; /* Stretch across the page */
-    max-width: 1000px; /* Optional, limits the width of the box */
-    margin: 10px auto; /* Centers the box and adds space around it */
-    background-color: rgb(255, 254, 254); /* White background */
-    border: 5px solid green; /* Green border */
-    padding: 10px; /* Padding around the text */
-    box-sizing: border-box; /* Ensures padding is included in width/height */
-    word-wrap: break-word; /* Prevents words from overflowing */
-}
 
-.white-box div {
-    margin-bottom: 10px; /* Adds space between boxes */
-}
+
