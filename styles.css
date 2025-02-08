@@ -9,8 +9,7 @@ header {
     padding: 15px 20px;
     position: sticky;
     top: 0;
-    width: 100vw;
-    max-width: 100%;    
+    width: 97%;  
     color: rgb(0, 0, 0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex-direction: column;
@@ -103,7 +102,7 @@ p {
 .intro {
     text-align: center; 
     padding: 50px 20px; 
-    background-image: url("assets/ginghy.jpg"); 
+    background-image: url("assests/ginghy.jpg"); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
