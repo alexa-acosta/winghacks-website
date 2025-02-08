@@ -215,3 +215,93 @@ footer {
     font-size: 18px;
     margin: 20px 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Below the menu button */
+    left: 20px;
+    width: 200px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    padding: 10px;
+    z-index: 999;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background: #e9ecef;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background: #ced4da;
+    color: #000;
+}
+
+/* Info Boxes */
+.features {
+    padding: 20px;
+}
+
+.feature {
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.info-box h1 {
+    color: #4CAF50;
+}
+
+.info-box-content {
+    margin-top: 10px;
+}
+
+.info-box-content h2 {
+    margin-top: 15px;
+}
+
+.info-box-content p {
+    margin: 10px 0;
+}
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
