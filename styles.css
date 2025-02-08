@@ -1,4 +1,4 @@
-.header {
+header {
     display: flex;
     justify-content: space-between;
     font-size: 60px; 
@@ -84,7 +84,7 @@ p {
 
 .nav-link{
     text-decoration: none;
-    font-size: 12px; 
+    font-size: 14px; 
     color: inherit; 
     font-weight: bold; 
     transition: color 0.3s; 
@@ -125,13 +125,13 @@ p {
 }
 
 .btn {
-    background-color: #D81B60; /* Brighter pink */
+    background-color: #D81B60;
     color: white;
     padding: 15px 25px;
     
     font-size: 18px;
     text-decoration: none;
-    border: 5px solid rgb(103, 19, 19); /* Thick border */
+    border: 5px solid rgb(103, 19, 19);
     border-radius: 12px;
     display: inline-block;
     margin: 10px;
