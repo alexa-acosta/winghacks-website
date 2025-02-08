@@ -5,116 +5,118 @@
     <link rel="stylesheet" href="styles.css">
     <title>Resources Page</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif; 
-            background-color: #3b82f6;  
-            color: white; 
-            margin: 0;
-            padding: 0;
-        }
+       body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #3b82f6;  
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
 
-  
-        header {
-            display: flex;
-            justify-content: flex-start; 
-            align-items: left;
-            padding: 20px 40px;
-            background-color: #2b6cb0; 
-        }
+header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: left;
+    padding: 20px 40px;
+    background-color: #2b6cb0; 
+}
 
-        h1 {
-            font-family: 'Helvetica Neue', sans-serif;  
-            font-size: 48px;
-            color: #f0f9ff; 
-            margin: 0;
-        }
-        
-        .section {
-            padding: 50px 40px;
-            background-color: #60a5fa;  
-            text-align: left;
-        }
+h1 {
+    font-family: 'Helvetica Neue', sans-serif;  
+    font-size: 48px;
+    color: #f0f9ff; 
+    margin: 0;
+}
 
-        p {
-            font-size: 24px;
-            margin-top: 20px;
-            line-height: 1.6;
-        }
+.section {
+    padding: 50px 40px;
+    background-color: #60a5fa;  
+    text-align: left;
+}
 
-  
-        .btn {
-            background-color: #000000;  /* Red buttons */
-            color: white;
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-size: 30px;
-            text-decoration: none;
-            display: inline-block;
-            margin: 30px 40px;
-            transition: background-color 0.3s ease;
-        }
+p {
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
 
-        .btn:hover {
-            background-color: #6fd4ff;  /* Lighter red on hover */
-        }
+.btn {
+    background-color: #224392;  /* Blue buttons */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px 40px;
+    transition: background-color 0.3s ease;
+}
 
-        input[type="checkbox"] {
-            display: none;
-        }
+.btn:hover {
+    background-color: #6fd4ff;  /* Lighter blue on hover */
+}
 
-        input[type="checkbox"]:checked + label + .hidden-content {
-            display: block;
-        }
+input[type="checkbox"] {
+    display: none;
+}
 
-        .hidden-content {
-            display: none;
-            margin-top: 15px;
-            font-size: 16px;
-            color: black;
-        }
+input[type="checkbox"]:checked + label + .hidden-content {
+    display: block;
+}
 
-        footer {
-            background-color: #ff9ec5;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+.hidden-content {
+    display: none;
+    background-color: #ff9ec5;
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+}
 
-        .card-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding-top: 30px;
-        }
+footer {
+    background-color: #ff9ec5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
-        .card {
-            background: rgb(255, 255, 255);
-            color: rgb(0, 55, 255);
-            width: 250px;
-            height: 350px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            padding: 20px;
-            transition: transform 0.3s;
-        }
+/* Adjusting the card container for horizontal alignment */
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Space cards evenly across the container */
+    flex-wrap: wrap;  /* Allows cards to wrap to the next row when space is limited */
+    gap: 20px;        /* Adds space between cards */
+    padding-top: 30px;
+}
 
-        .card:hover {
-            transform: translateY(-10px);  /* Lift effect on hover */
-        }
+/* Styling individual cards */
+.card {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 55, 255);
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
 
-        .card h3 {
-            color: #000000;
-        }
+.card:hover {
+    transform: translateY(-10px);  /* Lift effect on hover */
+}
 
-        .card p {
-            font-size: 18px;
-            margin: 20px 0;
-        }
+.card h3 {
+    color: #000000;
+}
+
+.card p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
 
        
 
