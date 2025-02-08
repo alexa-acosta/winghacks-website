@@ -58,30 +58,35 @@ p {
 
 
 
-.nav-container{
-    width: 100%; 
-    text-align: center; 
-}
-.nav-bar{
-    display: flex;
+/* Wraps the navbar for full width & centering */
+.nav-container {
+    width: 100%;
     text-align: center;
-    padding: 10px;
-    width: 100%;  /* Centers the navigation */
-    margin-top: 20px;
-    /* Adds space between images and nav */
 }
 
-.nav-list{
+/* Centers navbar using flexbox */
+.nav-bar {
+    display: flex;
+    justify-content: center;  /* Ensures items are centered */
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px; 
+}
+
+/* Centers nav items properly */
+.nav-list {
     list-style: none;
-    display: flex; 
+    display: flex;
     gap: 20px; 
     padding: 0;
-    margin: 10;
-    justify-content: center; /* Centers the nav items */
+    margin: 0; /* Fixed incorrect margin */
+    justify-content: center; /* Ensures nav items are centered */
 }
 
-.nav-item{
-    display: inline; 
+/* Makes nav items more consistent */
+.nav-item {
+    display: inline-block; /* More stable than inline */
 }
 
 .nav-link{
