@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -34,7 +34,7 @@ p{
     position: fixed;
     top: 20px;
     left: 20px;
-    background-color: white;
+    background-color: rgb(77, 177, 109);
     color: black;
     padding: 20px 30px;
     font-size: 24px;
@@ -50,8 +50,8 @@ p{
     list-style: none;
     display: flex; 
     gap: 20px; 
-    padding: 0;
-    margin: 0;
+    padding: 20;
+    margin: 10;
 }
 
 .nav-item{
@@ -72,7 +72,7 @@ p{
 .intro {
     text-align: center; 
     padding: 50px 20px; 
-    background-color: #ffe0e0; 
+    background-color: #ffd2f2; 
 }
 
 .features{
@@ -107,13 +107,13 @@ p{
 
 .section {
     padding: 50px 40px;
-    background-color: #60a5fa;  
+    background-color: #d343a3;  
     text-align: left;
 }
 
 .btn {
-    background-color: #224392; 
-    color: white;
+    background-color: #e7a8d8; 
+    color: rgb(0, 0, 0);
     padding: 15px 30px;
     border-radius: 10px;
     font-size: 30px;
@@ -124,7 +124,7 @@ p{
 }
 
 .btn:hover {
-    background-color: #6fd4ff;  
+    background-color: #698a69;  
 }
 
 input[type="checkbox"] {
@@ -158,18 +158,18 @@ footer {
     justify-content: space-between;  
     flex-wrap: wrap;  
     gap: 20px;       
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .card {
-    background: rgb(255, 255, 255);
-    color: rgb(0, 55, 255);
+    background: rgb(255, 192, 192);
+    color: rgb(0, 0, 0);
     width: 20%;  
     min-width: 250px;  
     height: 350px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
     transition: transform 0.3s ease;
 }
@@ -179,7 +179,7 @@ footer {
 }
 
 .card h3 {
-    color: #000000;
+    color: #297a2d;
 }
 
 .card p {
