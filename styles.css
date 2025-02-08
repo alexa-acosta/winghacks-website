@@ -22,7 +22,8 @@ header {
     align-items: center;  /* Aligns them vertically */
     gap: 20px;  /* Adds space between images */
     margin-bottom: 0px;  /* Adds space before the navbar */
-    width: 100%
+    margin-left: 100px;
+    width: 100%;
 }
 
 body{ 
