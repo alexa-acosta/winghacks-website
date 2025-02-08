@@ -40,14 +40,15 @@
     </div>
 
     <!-- Main Content -->
-    <div class="main-content">
-        <section id="sex">
-            <header>Sex Education</header>
+<div class="main-content">
+    <section id="sex">
+        <header>Sex Education</header>
+        <div class="content-container">
             <div class="logo-container">
                 <img src="assests/safes.jpg" alt="Logo" width="150">
             </div>
-            <div class="card-container">
-                <div class="card">
+            <div class="card2-container">
+                <div class="card2">
                     <h3>Safe Sex</h3>
                     <input type="checkbox" id="safeSexToggle">
                     <label class="btn" for="safeSexToggle">Learn More</label>
@@ -63,15 +64,17 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="period">
-            <header>Your Cycle</header>
+    <section id="period">
+        <header>Your Cycle</header>
+        <div class="content-container">
             <div class="logo-container">
                 <img src="assests/sexed.jpg" alt="Logo" width="150">
             </div>
-            <div class="card-container">
-                <div class="card">
+            <div class="card2-container">
+                <div class="card2">
                     <h3>Your Cycle Explained</h3>
                     <input type="checkbox" id="cycleToggle">
                     <label class="btn" for="cycleToggle">Learn More</label>
@@ -80,15 +83,17 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="hormones">
-            <header>Your Hormones</header>
+    <section id="hormones">
+        <header>Your Hormones</header>
+        <div class="content-container">
             <div class="logo-container">
                 <img src="assests/hormones.jpg" alt="Logo" width="150">
             </div>
-            <div class="card-container">
-                <div class="card">
+            <div class="card2-container">
+                <div class="card2">
                     <h3>Hormonal Health</h3>
                     <input type="checkbox" id="hormonalToggle">
                     <label class="btn" for="hormonalToggle">Learn More</label>
@@ -97,15 +102,17 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="birthControl">
-            <header>Birth Control Options</header>
+    <section id="birthControl">
+        <header>Birth Control Options</header>
+        <div class="content-container">
             <div class="logo-container">
                 <img src="assests/bc.jpg" alt="Logo" width="150">
             </div>
-            <div class="card-container">
-                <div class="card">
+            <div class="card2-container">
+                <div class="card2">
                     <h3>Available Methods</h3>
                     <input type="checkbox" id="birthControlToggle">
                     <label class="btn" for="birthControlToggle">Learn More</label>
@@ -114,24 +121,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-
-    <script>
-        // Function to toggle sidebar visibility
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('active');
-        }
-        
-        // Script to handle the showing/hiding of hidden content
-        document.querySelectorAll('.btn').forEach(button => {
-            button.addEventListener('click', function () {
-                const content = this.nextElementSibling;
-                content.style.display = content.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-    </script>
-
-</body>
-</html>
+        </div>
+    </section>
+</div>
