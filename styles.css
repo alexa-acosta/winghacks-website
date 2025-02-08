@@ -49,10 +49,10 @@ p {
     font-size: 24px; 
     font-weight: bold; 
     line-height: 1.6;
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     margin: 10px auto;
-    font-family: "bubblegum sans";
+    font-family:Arial, Helvetica, sans-serif;
     letter-spacing: 1px; 
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
 }
