@@ -235,7 +235,6 @@ html {
     z-index: 1000;
 }
 
-/* Sidebar Styling */
 #sidebar {
     position: fixed;  /* Keep sidebar fixed on the left */
     top: 0;
@@ -266,7 +265,7 @@ html {
     text-decoration: underline;
 }
 
-/* Styling for the button */
+/* Button Styling */
 .sidebar-btn {
     padding: 8px 16px;
     font-size: 14px;
@@ -275,16 +274,10 @@ html {
     color: white;
     border: none;
     border-radius: 5px;
-    position: absolute;
-    top: 20px; /* Place it at the top-left corner of the page */
-    left: 20px;
-    z-index: 1100; /* Ensure button is always on top of content */
-    transition: background-color 0.3s ease;
-}
-
-/* Button hover effect */
-.sidebar-btn:hover {
-    background-color: #555;
+    position: fixed; /* Fix button position on screen */
+    top: 20px;  /* Position it at the top of the screen */
+    left: 20px; /* Position it to the left */
+    z-index: 1100; /* Ensure button stays on top of content */
 }
 
 
@@ -332,11 +325,26 @@ html {
 
 
 .main-content {
-    padding: 20px;
-    overflow: auto; /* Ensures that content scrolls if it overflows */
+    margin-left: 20px;  /* Add left margin to make space for the fixed button */
+    padding-left: 270px; /* Ensure content doesn't get covered by the sidebar */
 }
 
 .lifestyle-body {
     margin-left: 270px; /* Ensure body content doesn't overlap the sidebar */
     font-family: Arial, sans-serif;
+}
+
+.white-box {
+    width: 100%; /* Stretch across the page */
+    max-width: 1000px; /* Optional, limits the width of the box */
+    margin: 10px auto; /* Centers the box and adds space around it */
+    background-color: white; /* White background */
+    border: 5px solid green; /* Green border */
+    padding: 10px; /* Padding around the text */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    word-wrap: break-word; /* Prevents words from overflowing */
+}
+
+.white-box div {
+    margin-bottom: 10px; /* Adds space between boxes */
 }
