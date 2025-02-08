@@ -90,7 +90,8 @@ p {
 }
 
 .nav-link{
-    text-decoration: none; 
+    text-decoration: none;
+    font-size: 14px; 
     color: inherit; 
     font-weight: bold; 
     transition: color 0.3s; 
