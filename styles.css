@@ -15,6 +15,21 @@ header {
     flex-direction: column;
 
 }
+.fixed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bubble Letters', sans-serif;
+    font-size: 60px; 
+    background-color: #F1C8CB; 
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;  /* Ensures it starts from the left */
+    width: 100%;  /* Makes sure it spans the full width */
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 .logo-container {
     display: flex;
@@ -296,7 +311,7 @@ html {
 }
 
 #fitness, #nutrition, #mental-health, #work-life, #routine {
-    scroll-margin-top: 190px; /* Adjust based on the height of your fixed sidebar */
+    scroll-margin-top: 185px; /* Adjust based on the height of your fixed sidebar */
 }
 
 /* Info Boxes */
@@ -385,7 +400,7 @@ html {
 
 .card2-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     gap: 20px;
     padding: 40px;
@@ -393,14 +408,14 @@ html {
 
 
 .card2 {
-    background: rgb(72, 27, 27);
-    color: rgb(255, 255, 255);
-    flex: 1 1 300px; /* Flexible size */
-    max-width: 800px;
+    background: rgb(229, 98, 179);
+    color: rgb(0, 0, 0);
+    flex: 1 1 300px; 
+    max-width: 3000px;
     padding: 20px;
-    border: 5px solid black; /* Thick border */
+    border: 5px solid rgb(255, 221, 221); /* Thick border */
     border-radius: 12px;
-    box-shadow: 3px 3px 10px rgba(208, 45, 165, 0.2);
+    box-shadow: 3px 3px 10px rgba(22, 44, 242, 0.2);
     transition: transform 0.3s ease-in-out;
 }
     
@@ -411,6 +426,7 @@ html {
 
 .card2 h3 {
     font-size: 22px;
+    font-family: ;
     margin-bottom: 10px;
     color: #AD1457;
 }
@@ -418,6 +434,7 @@ html {
 .card2 p {
     font-size: 18px;
     margin: 20px 0;
+    font-family: 'Bubble Letters', sans-serif;
 }
 
 .content-container {
@@ -432,12 +449,12 @@ html {
 }
 
 
-.card-container {
+.card2-container {
     flex: 1; 
 }
 
-.card {
-    background-color: #f4f4f4;
+.card2 {
+    background-color: #220dde;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
