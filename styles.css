@@ -41,13 +41,12 @@ h5{
 }
 
 
-p{
-    color:rgb(0, 0, 0);
-    font-size: 60;
-    font-weight: 100;
-    /* font-style: oblique; */
-    align-items: left;
-    font-family: 'Times New Roman', Times, serif;
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
 }
 /* 
 .corner-box {
@@ -129,19 +128,20 @@ p{
 }
 
 .btn {
-    background-color: #e7a8d8; 
-    color: rgb(0, 0, 0);
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 30px;
+    background-color: #D81B60; /* Brighter pink */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
     text-decoration: none;
     display: inline-block;
-    margin: 30px 40px;
-    transition: background-color 0.3s ease;
+    margin: 10px;
+    text-align: center;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #698a69;  
+    background-color: #880E4F;
 }
 
 input[type="checkbox"] {
@@ -154,8 +154,10 @@ input[type="checkbox"]:checked + label + .hidden-content {
 
 .hidden-content {
     display: none;
-    background-color: #ff9ec5;
-    margin-top: 15px;
+    margin-top: 10px;
+    background: #F8BBD0;
+    padding: 15px;
+    border-radius: 8px;
     font-size: 16px;
     color: black;
 }
@@ -170,36 +172,34 @@ footer {
 
 .card-container {
     display: flex;
-    justify-content: space-around; /* Distributes cards evenly */
-    flex-wrap: wrap; /* Allows cards to wrap if the screen is too small */
-    gap: 20px; /* Adds space between cards */
-    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
 }
 
 
 .card {
-    background: rgb(255, 200, 200);
-        color: rgb(0, 0, 0);
-        flex: 1 1 300px; /* Adjusts size dynamically */
-        max-width: 300px; /* Prevents it from getting too large */
-        height: auto;
-        border: 10px solid black; /* Adds a thick black border */
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        transition: transform 0.3s ease;
+    background: white;
+    color: black;
+    flex: 1 1 300px; /* Flexible size */
+    max-width: 350px;
+    padding: 20px;
+    border: 5px solid black; /* Thick border */
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
     
 
 .card:hover {
-    transform: translateY(-10px);  
+    transform: translateY(-5px);  
 }
 
 .card h3 {
-    color: #000000;
-    font-size: 40px;
-    align-items: left;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #AD1457;
 }
 
 .card p {
