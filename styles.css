@@ -221,7 +221,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Hamburger menu styling */
+
 .hamburger-menu {
     position: fixed;
     top: 20px;
@@ -239,16 +239,17 @@ html {
 #sidebar {
     position: fixed;  /* Keep sidebar fixed on the left */
     top: 0;
-    left: 0;
+    left: -250px; /* Initially off-screen */
     width: 250px;
     height: 100vh; /* Full height of the viewport */
-    background-color: #F6B0BB;
+    background-color: #333;
     color: white;
     padding: 15px;
-    box-shadow: 2px 0 5px #9CAD8C;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000; /* Ensure sidebar is on top */
     display: flex;
     flex-direction: column;
+    transition: left 0.3s ease; /* Smooth transition for sliding in/out */
 }
 
 #sidebar h3 {
@@ -267,80 +268,75 @@ html {
 
 /* Styling for the button */
 .sidebar-btn {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 8px 16px;
+    font-size: 14px;
     cursor: pointer;
-    background-color: #F6B0BB;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
+    position: absolute;
+    top: 20px; /* Place it at the top-left corner of the page */
+    left: 20px;
+    z-index: 1100; /* Ensure button is always on top of content */
     transition: background-color 0.3s ease;
 }
 
 /* Button hover effect */
 .sidebar-btn:hover {
-    background-color: #9CAD8C;
+    background-color: #555;
 }
 
 
 /* Info Boxes */
 .features {
-    padding: 20px;
+    display: flex; 
+    justify-content: space-between; /* Spread the info boxes across the screen */
+    padding: 40px;
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+    overflow-x: auto; /* Adds horizontal scrolling if content overflows */
 }
 
 .feature {
-    margin: 20px 0;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px; 
+    background: white;
+    border: 5px solid #9CAD8C;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+    margin-right: 20px; /* Adds spacing between the boxes */
 }
-
 .info-box {
-    flex: 1 1 30%;  /* Each box takes 30% width */
+    flex: 1 1 30%;  /* Ensures each box takes up about 30% width */
     background-color: white;
     border: 2px solid #4CAF50;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-right: 20px; /* Spacing between boxes */
     border-radius: 8px;
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    box-sizing: border-box;
 }
 
-.info-box h1 {
-    color: #4CAF50;
-    font-size: 1.5rem;
+.features .info-box:last-child {
+    margin-right: 0; /* Removes the right margin on the last box */
 }
 
-.info-box-content h2 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #333;
-}
 
-.info-box-content p {
-    margin: 5px 0;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .features {
-        flex-direction: column; /* Stack the info boxes vertically on smaller screens */
+        flex-direction: column; /* Stack vertically on smaller screens */
+        gap: 20px; /* Adds space between stacked boxes */
     }
 }
 
 
-.info-box-content {
-    margin-top: 10px;
-}
-
-.info-box-content h2 {
-    margin-top: 15px;
-}
-
-.info-box-content p {
-    margin: 10px 0;
-}
 .main-content {
-    margin-left: 220px;
     padding: 20px;
+    overflow: auto; /* Ensures that content scrolls if it overflows */
+}
+
+.lifestyle-body {
+    margin-left: 270px; /* Ensure body content doesn't overlap the sidebar */
+    font-family: Arial, sans-serif;
 }
