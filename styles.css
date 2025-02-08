@@ -1,8 +1,8 @@
-.header {
+header {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    background-color: #f7c7c7; 
+    background-color: #F1C8CB; 
     padding: 15px 20px; 
     position: sticky; 
     top: 0; 
@@ -13,13 +13,15 @@
 
 body{ 
     font-family: 'Times New Roman', Times, serif;
-    background-color: #ffd1f4;
+    background-color: #ECE0DA;
     text-align: center;
 }
 
 h1{
-    color: #e63946;
+    color: #F6B0BB;
     font-size: 50px;
+    width: 100%; 
+    align-items: center; 
 }
 
 p{
@@ -87,3 +89,129 @@ p{
     text-align: center; 
 }
 
+.img-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.img-container img {
+    position: absolute; 
+    top: -50px;
+    left: -50px;
+    width: auto; 
+    height: 100%; 
+}
+
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #3b82f6;  
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: left;
+    padding: 20px 40px;
+    background-color: #2b6cb0; 
+}
+
+h1 {
+    font-family: 'Helvetica Neue', sans-serif;  
+    font-size: 48px;
+    color: #f0f9ff; 
+    margin: 0;
+}
+
+.section {
+    padding: 50px 40px;
+    background-color: #60a5fa;  
+    text-align: left;
+}
+
+p {
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: #224392; 
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px 40px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6fd4ff;  
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label + .hidden-content {
+    display: block;
+}
+
+.hidden-content {
+    display: none;
+    background-color: #ff9ec5;
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+}
+
+footer {
+    background-color: #ff9ec5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+    gap: 20px;       
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 55, 255);
+    width: 30%;  
+    min-width: 250px;  
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);  
+}
+
+.card h3 {
+    color: #000000;
+}
+
+.card p {
+    font-size: 18px;
+    margin: 20px 0;
+}
