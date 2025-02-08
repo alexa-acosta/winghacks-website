@@ -5,52 +5,165 @@
     <link rel="stylesheet" href="styles.css">
     <title>Resources Page</title>
     <style>
+        /* Apply blue background color to the body */
         body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #3b82f6;  
-            color: white; 
-            text-align: center;
+            font-family: 'Arial', sans-serif;  /* Changed font */
+            background-color: #3b82f6;  /* Blue background */
+            color: white; /* Text color for contrast */
             margin: 0;
             padding: 0;
         }
 
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: flex-start;  /* Align header to the left */
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #2b6cb0;  /* Darker blue header */
+        }
 
         h1 {
-            font-size: 50px;
-            margin-top: 50px; /
-            color: #f0f9ff;  /
+            font-family: 'Helvetica Neue', sans-serif;  /* Different font for the title */
+            font-size: 48px;
+            color: #f0f9ff;  /* Light color for the header */
+            margin: 0;
         }
 
-        
+        /* Section style */
         .section {
-            padding: 40px;
+            padding: 50px 40px;
+            background-color: #60a5fa;  /* Slightly lighter blue */
+            text-align: center;
         }
 
-        
-        a {
+        /* Style for paragraph text */
+        p {
+            font-size: 24px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Buttons to make it look interactive */
+        .btn {
+            background-color: #e63946;  /* Red buttons */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
             text-decoration: none;
-            color: #e63946;
-            font-weight: bold;
-            transition: color 0.3s;
+            display: inline-block;
+            margin: 20px 10px;
+            transition: background-color 0.3s ease;
         }
 
-        a:hover {
-            color: #f0bcd4;
+        .btn:hover {
+            background-color: #f0bcd4;  /* Lighter red on hover */
         }
+
+        /* Footer section */
+        footer {
+            background-color: #2b6cb0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Layout for multiple resource cards */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-top: 30px;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            width: 250px;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);  /* Lift effect on hover */
+        }
+
+        .card h3 {
+            color: #3b82f6;
+        }
+
+        .card p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        /* Corner box */
+        .corner-box {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: white;
+            color: black;
+            padding: 20px 30px;
+            font-size: 24px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+
     </style>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <h1>Do u need resources?</h1>
     </header>
 
+    <!-- Main Section -->
     <section class="section">
-        <p>Here you can find helpful resources to support your health and well-being!</p>
-        <a href="#">Resource 1</a><br>
-        <a href="#">Resource 2</a><br>
-        <a href="#">Resource 3</a><br>
+        <h2>Find the Support You Need</h2>
+        <p>Explore various resources designed to help you navigate challenges and find support. Whether you're dealing with health, emotional well-being, or educational resources, we’ve got you covered.</p>
+        
+        <!-- Resource buttons -->
+        <a href="#" class="btn">Mental Health Support</a>
+        <a href="#" class="btn">Physical Health Resources</a>
+        <a href="#" class="btn">Educational Resources</a>
     </section>
 
+    <!-- Resource Cards -->
+    <section class="card-container">
+        <div class="card">
+            <h3>Mental Health</h3>
+            <p>Explore helpful mental health tips and support resources.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+            <h3>Physical Health</h3>
+            <p>Access a variety of resources to help improve your physical well-being.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+        <div class="card">
+            <h3>Education Support</h3>
+            <p>Find tools and resources to excel in your studies and career goals.</p>
+            <a href="#" class="btn">Start Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Gator Girl's Guide | All Rights Reserved</p>
+    </footer>
+
+    <!-- Corner Box -->
+    <div class="corner-box">WomensHealth.com</div>
 </body>
 </html>
