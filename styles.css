@@ -7,15 +7,15 @@
     position: sticky; 
     top: 0; 
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    color: white;
+    color: rgb(0, 0, 0);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 body{ 
     font-family: 'Times New Roman', Times, serif;
-    background-color: #deecda;
+    background-color: #000000;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -100,7 +100,7 @@ p{
 
 .section {
     padding: 50px 40px;
-    background-color: #d343a3;  
+    background-color: #ff8787;  
     text-align: left;
 }
 
@@ -155,7 +155,7 @@ footer {
     padding-bottom: 10px;
 }
 .card {
-    background: rgb(255, 192, 192);
+    background: rgb(255, 200, 200);
     color: rgb(0, 0, 0);
     width: 20%;  
     min-width: 250px;  
