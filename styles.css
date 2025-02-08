@@ -234,19 +234,37 @@ html {
     z-index: 1000;
 }
 
-/* Sidebar styling */
-.sidebar {
+/* Styling for the sidebar */
+#sidebar {
+    display: none; /* Sidebar is hidden by default */
     position: fixed;
-    top: 60px; /* Below the menu button */
-    left: 20px;
-    width: 200px;
-    background: #f8f9fa;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure sidebar is on top */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for the button */
+.sidebar-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    padding: 10px;
-    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.sidebar-btn:hover {
+    background-color: #555;
 }
 
 /* Sidebar links */
@@ -260,11 +278,6 @@ html {
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
-}
-
-.sidebar a:hover {
-    background: #ced4da;
-    color: #000;
 }
 
 /* Info Boxes */

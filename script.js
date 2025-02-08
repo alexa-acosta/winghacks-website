@@ -4,7 +4,7 @@ function toggleSidebar() {
 
     // Check the current display status and toggle
     if (sidebar.style.display === "none" || sidebar.style.display === "") {
-        sidebar.style.display = "flex";  // Show sidebar
+        sidebar.style.display = "block";  // Show sidebar
     } else {
         sidebar.style.display = "none";  // Hide sidebar
     }
