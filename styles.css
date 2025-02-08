@@ -121,7 +121,7 @@ p {
     width: 30%;
     padding: 20px; 
     background: white;
-    border: 5px solid rgb(102, 195, 135); /* Thick border */
+    border: 5px solid #9CAD8C;
     border-radius: 12px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     text-align: center; 
