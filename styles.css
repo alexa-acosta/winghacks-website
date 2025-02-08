@@ -234,7 +234,6 @@ html {
     border-radius: 5px;
     z-index: 1000;
 }
-
 #sidebar {
     position: fixed;  /* Keep sidebar fixed on the left */
     top: 0;
@@ -280,6 +279,13 @@ html {
     z-index: 1100; /* Ensure button stays on top of content */
 }
 
+/* Main Content Styling */
+.main-content {
+    margin-left: 20px;  /* Add left margin to make space for the fixed button */
+    padding-left: 270px; /* Ensure content doesn't get covered by the sidebar */
+    margin-top: 60px; /* Shift the entire content down to avoid being covered by the button */
+}
+
 
 /* Info Boxes */
 .features {
@@ -323,12 +329,6 @@ html {
     }
 }
 
-
-.main-content {
-    margin-left: 20px;  /* Add left margin to make space for the fixed button */
-    padding-left: 270px; /* Ensure content doesn't get covered by the sidebar */
-}
-
 .lifestyle-body {
     margin-left: 270px; /* Ensure body content doesn't overlap the sidebar */
     font-family: Arial, sans-serif;
@@ -338,7 +338,7 @@ html {
     width: 100%; /* Stretch across the page */
     max-width: 1000px; /* Optional, limits the width of the box */
     margin: 10px auto; /* Centers the box and adds space around it */
-    background-color: white; /* White background */
+    background-color: rgb(255, 254, 254); /* White background */
     border: 5px solid green; /* Green border */
     padding: 10px; /* Padding around the text */
     box-sizing: border-box; /* Ensures padding is included in width/height */
