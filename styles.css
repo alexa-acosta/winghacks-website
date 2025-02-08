@@ -291,8 +291,8 @@ html {
     margin-top: 60px; /* Shift the entire content down to avoid being covered by the button */
 }
 
-#fitness, #mental-health, #work-life {
-    scroll-margin-top: 80px; /* Adjust based on the height of your fixed sidebar */
+#fitness, #nutrition, #mental-health, #work-life, #routine {
+    scroll-margin-top: 100px; /* Adjust based on the height of your fixed sidebar */
 }
 
 /* Info Boxes */
