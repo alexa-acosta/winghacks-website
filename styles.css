@@ -114,6 +114,19 @@ p {
     max-width: 1200px;
     margin: 0 auto;
 }
+.gogators {
+    border: 2px solid red;
+    text-align: center; 
+    padding: 50px 20px; 
+    background-image: url("assests/uf.webp"); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 
 .features{
