@@ -23,7 +23,7 @@ header {
     font-size: 60px; 
     background-color: #F1C8CB; 
     padding: 15px 20px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;  /* Ensures it starts from the left */
     width: 100%;  /* Makes sure it spans the full width */
