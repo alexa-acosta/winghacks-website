@@ -15,6 +15,12 @@ header {
     flex-direction: column;
 
 }
+
+.page-section {
+    position: relative;  /* Ensures the header stays inside this section */
+    padding-top: 100px; /* Prevents overlap with the header */
+}
+
 .fixed-header {
     display: flex;
     justify-content: space-between;
@@ -451,7 +457,7 @@ html {
 }
 
 .card2 {
-    background-color: #220dde;
+    background-color: #d0de0d;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
