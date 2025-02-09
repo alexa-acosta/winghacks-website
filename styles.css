@@ -397,31 +397,28 @@ html {
 }
 
 
-
 .card2-container {
     display: flex;
-    justify-content: left;
+    justify-content: space-between; /* Distributes the boxes evenly */
     flex-wrap: wrap;
     gap: 20px;
     padding: 40px;
 }
 
-
 .card2 {
     background: rgb(229, 98, 179);
     color: rgb(0, 0, 0);
-    flex: 1 1 300px; 
-    max-width: 3000px;
+    width: 100%;  /* Makes each card take full width */
+    max-width: none; /* Removes any width limit */
     padding: 20px;
-    border: 5px solid rgb(255, 221, 221); /* Thick border */
+    border: 5px solid rgb(255, 221, 221);
     border-radius: 12px;
     box-shadow: 3px 3px 10px rgba(22, 44, 242, 0.2);
-    transition: transform 0.3s ease-in-out;
+    transition: none; /* Removes any hover transformation */
 }
-    
 
 .card2:hover {
-    transform: translateY(-5px);  
+    transform: none; /* Prevents movement when hovering */
 }
 
 .card2 h3 {
