@@ -99,11 +99,10 @@ p {
 }
 
 .nav-link:hover{
-    color: #9CAD8C; 
+    color: #56d7a1; 
 }
 
 .intro {
-    border: 2px solid rgb(255, 220, 220);
     text-align: center; 
     padding: 50px 20px; 
     background-image: url("assests/ginghy.jpg"); 
@@ -117,12 +116,11 @@ p {
 
 
 .gogators {
-    border: 2px solid red;
     text-align: center; 
     padding: 50px 20px; 
     background-image: url("assests/uf.webp"); 
     background-size: cover;
-    background-position: center; 
+    background-position: center center; 
     background-repeat: no-repeat;
     width: 100%; 
     max-width: 1200px;
