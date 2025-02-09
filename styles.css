@@ -476,6 +476,6 @@ section {
 /* Best Practice: Use a Wrapper */
 .image-container {
     display: flex;
-    margin-left: 60px;
+    margin-left: 500px;
     gap: 20px; /* Adds space between images */
 }
