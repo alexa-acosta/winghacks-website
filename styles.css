@@ -4,7 +4,7 @@ header {
     justify-content: center;
     font-family: 'Bubble Letters', sans-serif;
     font-size: 60px; 
-    text-align: center;
+    text-align: center !important;
     align-items: center;
     background-color: #F1C8CB; 
     padding: 15px 20px;
