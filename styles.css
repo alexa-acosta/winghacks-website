@@ -16,27 +16,6 @@ header {
 
 }
 
-.page-section {
-    position: relative;  /* Ensures the header stays inside this section */
-    padding-top: 100px; /* Prevents overlap with the header */
-}
-
-.fixed-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Bubble Letters', sans-serif;
-    font-size: 60px; 
-    background-color: #F1C8CB; 
-    padding: 15px 20px;
-    position: absolute;
-    top: 0;
-    left: 0;  /* Ensures it starts from the left */
-    width: 100%;  /* Makes sure it spans the full width */
-    color: rgb(0, 0, 0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .logo-container {
     display: flex;
     justify-content: center;  /* Centers the images horizontally */
@@ -320,6 +299,9 @@ html {
     scroll-margin-top: 185px; /* Adjust based on the height of your fixed sidebar */
 }
 
+#sex, #period, #horomones, #birthControl {
+    scroll-margin-top: 180px; 
+}
 /* Info Boxes */
 .features {
     display: flex; 
@@ -466,4 +448,17 @@ html {
 .hidden-content {
     display: none;
     margin-top: 10px;
+}
+section {
+    display: inline-block; /* Allows sections to sit next to each other */
+    margin-right: 20px; /* Adds space between images */
+}
+
+.or 
+
+/* Best Practice: Use a Wrapper */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers images */
+    gap: 20px; /* Adds space between images */
 }
