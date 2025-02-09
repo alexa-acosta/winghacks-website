@@ -191,10 +191,10 @@ input[type="checkbox"]:checked + label + .hidden-content {
 footer {
     background-color: #AD1457;
     color: white;
-    text-align: left;
+    text-align: center;
     padding: 15px;
     margin-top: 40px;
-    border-radius: 10px;
+    border:#000000 10px solid;
     border-color: black;
 }
 
