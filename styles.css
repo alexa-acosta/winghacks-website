@@ -424,13 +424,12 @@ html {
 
 .content-container {
     display: flex;
-    align-items: center;
     margin-bottom: 20px;
 }
 
 
 .logo-container {
-    margin-right: 20px; 
+    margin-right: 5px; 
 }
 
 
@@ -459,6 +458,5 @@ section {
 /* Best Practice: Use a Wrapper */
 .image-container {
     display: flex;
-    justify-content: center; /* Centers images */
     gap: 20px; /* Adds space between images */
 }
