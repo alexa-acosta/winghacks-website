@@ -103,6 +103,7 @@ p {
 }
 
 .intro {
+    border: 2px solid red;
     text-align: center; 
     padding: 50px 20px; 
     background-image: url("assests/ginghy.jpg"); 
