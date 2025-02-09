@@ -136,7 +136,7 @@ p {
 }
 
 .feature{
-    width: 30%;
+    width: 100%;
     padding: 20px; 
     background: white;
     border: 5px solid #9CAD8C;
@@ -211,7 +211,7 @@ footer {
     background: white;
     color: black;
     flex: 1 1 300px; /* Flexible size */
-    max-width: 350px;
+    max-width: none;
     padding: 20px;
     border: 5px solid black; /* Thick border */
     border-radius: 12px;
@@ -476,6 +476,5 @@ section {
 /* Best Practice: Use a Wrapper */
 .image-container {
     display: flex;
-    margin-left: 500px;
     gap: 20px; /* Adds space between images */
 }
