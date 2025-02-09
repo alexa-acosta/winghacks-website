@@ -211,7 +211,7 @@ footer {
     background: white;
     color: black;
     flex: 1 1 300px; /* Flexible size */
-    max-width: none;
+    max-width: 60%;
     padding: 20px;
     border: 5px solid black; /* Thick border */
     border-radius: 12px;
